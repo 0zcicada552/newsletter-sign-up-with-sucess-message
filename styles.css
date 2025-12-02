@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: hsl(234, 29%, 20%);
+    overflow-x: hidden;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 700px;
+    border-radius: 12px;
+    margin: 100px auto;
+    height: 450px;   
+    color: hsl(235, 18%, 26%);
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .card-text{
+    margin: 50px;
+}
+
+.card .card-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(235, 18%, 26%);
+    margin-bottom: 10px;
+}
+
+.card .card-text .card-header p {
+    margin-bottom: 10px;
+}
+
+.card .card-text .card-advantage {
+    display: flex;
+    align-content: center;
+    gap: 5px;
+}
+
+.card .card-text .card-advantage img {
+    width: 18px;
+    height: 18px;
+}
+
+.card .card-text, .card .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.card .form-container .email-input {
+    border: 1px solid hsl(0, 0%,58%);
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    outline: 0;
+}
+
+.card .form-container .statut {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .form-container .statut-error {
+    color: #f00;
+    opacity: 0;
+}
+
+.card .form-container .statut small {
+    display: inline-block;
+}
+
+.card .form-container .btn-submit, .overlay .btn-dismiss {   
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.card .form-container .btn-submit:hover {
+    background-image: linear-gradient(to right, hsl(4, 100%, 67%), orange);
+}
+
+.img-container {
+    margin: 10px;
+}
+
+.img-container img {
+    height: 425px;
+}
+
+.login-error {
+    border: 1px solid #f00;
+    background-color: rgba(255, 0, 0, 0.171);
+}
+
+.overlay {
+    position: fixed;
+    z-index: 12;
+    transition: .3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36,36,36,0.4);
+    transition: scale .3s;
+    transform: scale(0);
+}
+
+.modal-box {
+    margin: 100px auto;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(235, 18%, 26%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 300px;
+    padding: 30px;
+    position: relative;
+    z-index: 16;
+    border-radius: 12px;
+}
+
+.modal-box h2 {
+    font-size: 30px;
+}
+
+.modal-box img {
+    display: block;
+    margin-right: auto;
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer strong, footer strong a {
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    font-size: 24px;
+}
